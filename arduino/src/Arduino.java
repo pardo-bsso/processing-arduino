@@ -113,10 +113,7 @@ public class Arduino {
   // can access its serialEvent() method.
   public class SerialProxy extends PApplet {
     public SerialProxy() {
-      // Create the container for the registered dispose() methods, so that
-      // our Serial instance can register its dispose() method (which it does
-      // automatically).
-      disposeMethods = new RegisteredMethods();
+
     }
 
     public void serialEvent(Serial which) {
